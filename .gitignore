@@ -1,0 +1,14 @@
+# 本地真实配置(含凭据), 绝不入库
+config.json
+
+# 编译产物
+/wanlab-linux
+/wanlab-linux-new
+
+# 运行时数据与备份
+pinghist.jsonl
+nodesync-bak-*.rsc
+*.bak*
+
+# go build ./... 的默认产物名
+/wanlab

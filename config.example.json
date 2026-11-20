@@ -1,0 +1,55 @@
+{
+  "fleet_domain_suffix": ".example.com",
+  "fleet_key": "/etc/wanlab/fleet_key",
+  "if_index": {
+    "wan1": 10,
+    "wan2": 9,
+    "wan3": 8
+  },
+  "lan_cidr": "192.168.0.0/24",
+  "lines": [
+    {
+      "id": "wan1",
+      "label": "Line A",
+      "pppoe_iface": "pppoe-wan1",
+      "bandwidth_mbps": 1000
+    },
+    {
+      "id": "wan2",
+      "label": "Line B",
+      "pppoe_iface": "pppoe-wan2",
+      "bandwidth_mbps": 2000
+    },
+    {
+      "id": "wan3",
+      "label": "Line C",
+      "pppoe_iface": "pppoe-wan3",
+      "bandwidth_mbps": 1000
+    }
+  ],
+  "listen": "0.0.0.0:8688",
+  "mac_direct_addr": "",
+  "mac_lease_mac": "",
+  "mac_proxy_addr": "",
+  "mihomo_api": "",
+  "mihomo_secret": "",
+  "nodes": [
+    {
+      "ip": "203.0.113.10",
+      "key": "node1",
+      "label": "node1 示例节点",
+      "group": "shared-exit"
+    },
+    {
+      "ip": "203.0.113.20",
+      "key": "node2",
+      "label": "node2 示例节点",
+      "group": "shared-exit"
+    }
+  ],
+  "ros_base": "https://192.168.0.1",
+  "ros_host": "192.168.0.1",
+  "ros_pass": "CHANGE_ME",
+  "ros_user": "admin",
+  "snmp_community": "wanlab"
+}

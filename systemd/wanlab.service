@@ -1,0 +1,13 @@
+[Unit]
+Description=wanlab three-line test panel
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/opt/wanlab/wanlab
+Restart=always
+RestartSec=2
+
+[Install]
+WantedBy=multi-user.target
